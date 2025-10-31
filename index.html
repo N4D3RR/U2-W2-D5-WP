@@ -15,36 +15,46 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
   </head>
-  <body class="container bg-black">
-    <header>
+  <body class="bg-black">
+    <header class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <img src="/assets/netflix_logo.png" alt="netflix_logo" height="100" />
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <img src="/assets/netflix_logo.png" alt="netflix_logo" height="30" />
+          <button
+            class="navbar-toggler bg-transparent border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse"
+            aria-controls="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#"
+                <a class="nav-link text-secondary" aria-current="page" href="#"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">TV Shows</a>
+                <a class="nav-link text-secondary" href="#">TV Shows</a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Movies</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Recently Added</a>
+                <a class="nav-link text-secondary" href="#">Recently Added</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">My List</a>
+                <a class="nav-link text-secondary" href="#">My List</a>
               </li>
             </ul>
             <div class="d-flex text-white">
               <i class="px-3 bi bi-search fw-bold"></i>
-              <p class="px-3">KIDS</p>
+              <p class="px-3 text-secondary small">KIDS</p>
               <i class="px-3 bi bi-bell-fill"></i>
 
               <img src="/assets/avatar.png" alt="avatar" height="30" />
@@ -54,33 +64,33 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <div class="d-flex justify-content-between">
-        <div class="px-2">
-          <h1 class="d-inline-block text-white">TV Shows</h1>
+        <div class="px-2 d-flex align-items-center mb-2">
+          <h1 class="d-inline-block text-white fs-2">TV Shows</h1>
           <!-- <div class="d-flex py-4 px-3"> -->
           <button
-            class="d-inline-block btn btn-dark border border-1 dropdown-toggle bg-transparent rounded-0"
+            class="d-inline-block bg-transparent text-white border border-1 dropdown-toggle ms-5 rounded-0"
           >
             Genres
           </button>
           <!-- </div> -->
         </div>
-        <div class="text-light p-1">
-          <i class="border border-1 bi-text-left"></i>
-          <i class="border border-1 bi bi-grid-fill"></i>
+        <div class="text-secondary p-1">
+          <i class="border border-1 bi-text-left px-1"></i>
+          <i class="border border-1 bi bi-grid-fill px-1"></i>
         </div>
       </div>
       <!-- CAROSELLO -->
 
-      <div class="d-block carousel-section mb-5">
-        <h4 class="section-title mb-3 text-white">Trending Now</h4>
-        <div class="carousel" data-bs-ride="carousel">
+      <div class="d-block mb-5">
+        <h4 class="mb-2 text-white">Trending Now</h4>
+        <div class="carousel" id="now">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row g-2">
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
                     <img
                       src="/assets/media/media0.webp"
                       class="img-fluid rounded rounded-0"
@@ -89,7 +99,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media1.jpg"
                       class="img-fluid rounded rounded-0"
@@ -98,7 +108,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
                     <img
                       src="/assets/media/media2.webp"
                       class="img-fluid rounded rounded-0"
@@ -107,7 +117,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media3.webp"
                       class="img-fluid rounded rounded-0"
@@ -116,7 +126,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media4.jpg"
                       class="img-fluid rounded rounded-0"
@@ -125,7 +135,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media5.webp"
                       class="img-fluid rounded rounded-0"
@@ -138,7 +148,7 @@
             <div class="carousel-item">
               <div class="row g-2">
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media6.jpg "
                       class="img-fluid rounded rounded-0"
@@ -147,9 +157,45 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media7.webp "
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media24.jpg "
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media25.webp "
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media26.webp "
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media27.jpg "
                       class="img-fluid rounded rounded-0"
                       alt="Show 8"
                     />
@@ -161,7 +207,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carousel1"
+            data-bs-target="#now"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -170,7 +216,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carousel1"
+            data-bs-target="#now"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -179,14 +225,14 @@
         </div>
       </div>
       <!-- carosello 2 -->
-      <div class="d-block carousel-section mb-5">
-        <h4 class="section-title mb-3 text-white">Watch It Again</h4>
-        <div class="carousel" data-bs-ride="carousel">
+      <div class="d-block mb-5">
+        <h4 class="mb-2 text-white">Watch It Again</h4>
+        <div class="carousel" id="again">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row g-2">
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
                     <img
                       src="/assets/media/media16.webp"
                       class="img-fluid rounded rounded-0"
@@ -195,7 +241,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media17.jpg"
                       class="img-fluid rounded rounded-0"
@@ -204,7 +250,16 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card position-relative">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media4.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="How I Met Your Mother"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0 position-relative">
                     <img
                       src="/assets/media/media18.jpg"
                       class="img-fluid rounded rounded-0"
@@ -213,7 +268,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media19.webp"
                       class="img-fluid rounded rounded-0"
@@ -222,7 +277,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media20.jpg"
                       class="img-fluid rounded rounded-0"
@@ -230,10 +285,143 @@
                     />
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-2">
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
                       src="/assets/media/media21.webp"
+                      class="img-fluid rounded rounded-0"
+                      alt="Fresh Prince"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media22.webp "
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 7"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media23.webp"
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media28.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media29.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media30.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#again"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#again"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- CAROSELLO 3 -->
+      <div class="d-block mb-5">
+        <h4 class="mb-2 text-white">New Releases</h4>
+        <div class="carousel" id="releases">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-2">
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <img
+                      src="/assets/media/media8.webp"
+                      class="img-fluid rounded rounded-0"
+                      alt="Stranger Things"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media9.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="How I Met Your Mother"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <img
+                      src="/assets/media/media10.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="My Next Guest"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media11.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="Brooklyn Nine-Nine"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media12.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="The Last Czar"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media13.jpg"
                       class="img-fluid rounded rounded-0"
                       alt="Fresh Prince"
                     />
@@ -244,18 +432,54 @@
             <div class="carousel-item">
               <div class="row g-2">
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
-                      src="/assets/media/media22.webp "
+                      src="/assets/media/media14.webp "
                       class="img-fluid rounded rounded-0"
                       alt="Show 7"
                     />
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="show-card">
+                  <div class="card border-0 rounded-0">
                     <img
-                      src="/assets/media/media23.webp"
+                      src="/assets/media/media15.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media31.webp"
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media32.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media15.jpg"
+                      class="img-fluid rounded rounded-0"
+                      alt="Show 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 rounded-0">
+                    <img
+                      src="/assets/media/media8.webp"
                       class="img-fluid rounded rounded-0"
                       alt="Show 8"
                     />
@@ -267,7 +491,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carousel1"
+            data-bs-target="#releases"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -276,133 +500,12 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carousel1"
+            data-bs-target="#releases"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>
-
-        <!-- CAROSELLO 3 -->
-        <div class="d-block carousel-section mb-5">
-          <h4 class="section-title mb-3 text-white">New Releases</h4>
-          <div class="carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row g-2">
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <div class="show-card position-relative">
-                      <img
-                        src="/assets/media/media8.webp"
-                        class="img-fluid rounded rounded-0"
-                        alt="Stranger Things"
-                      />
-                      <span
-                        class="badge bg-danger position-absolute top-0 start-0 m-2"
-                        >NEW EPISODES</span
-                      >
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <div class="show-card">
-                      <img
-                        src="/assets/media/media9.jpg"
-                        class="img-fluid rounded rounded-0"
-                        alt="How I Met Your Mother"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <div class="show-card position-relative">
-                      <img
-                        src="/assets/media/media10.jpg"
-                        class="img-fluid rounded rounded-0"
-                        alt="My Next Guest"
-                      />
-                      <span
-                        class="badge bg-danger position-absolute top-0 start-0 m-2"
-                        >NEW EPISODES</span
-                      >
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <div class="show-card">
-                      <img
-                        src="/assets/media/media11.jpg"
-                        class="img-fluid rounded rounded-0"
-                        alt="Brooklyn Nine-Nine"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <div class="show-card">
-                      <img
-                        src="/assets/media/media12.jpg"
-                        class="img-fluid rounded rounded-0"
-                        alt="The Last Czar"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <div class="show-card">
-                      <img
-                        src="/assets/media/media13.jpg"
-                        class="img-fluid rounded rounded-0"
-                        alt="Fresh Prince"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row g-2">
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <div class="show-card">
-                      <img
-                        src="/assets/media/media14.webp "
-                        class="img-fluid rounded rounded-0"
-                        alt="Show 7"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <div class="show-card">
-                      <img
-                        src="/assets/media/media15.jpg"
-                        class="img-fluid rounded rounded-0"
-                        alt="Show 8"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carousel1"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carousel1"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
         </div>
       </div>
     </main>
@@ -410,22 +513,23 @@
     <footer class="w-75 m-auto footer py-5">
       <div class="container px-4">
         <div class="mb-4">
-          <a href="#" class="text-light text-secondary-emphasis me-3"
+          <a href="#" class="text-light text-secondary me-3"
             ><i class="bi bi-facebook"></i
           ></a>
-          <a href="#" class="text-light text-secondary-emphasis me-3"
-            ><i class="bi bi-instagram"></i>
-          </a>
-          <a href="#" class="text-light text-secondary-emphasis me-3"
+          <a href="#" class="text-light text-secondary me-3"
+            ><i class="bi bi-instagram"></i
+          ></a>
+
+          <a href="#" class="text-light text-secondary me-3"
             ><i class="bi bi-twitter"></i
           ></a>
-          <a href="#" class="text-light text-secondary-emphasis"
+          <a href="#" class="text-light text-secondary"
             ><i class="bi bi-youtube"></i
           ></a>
         </div>
         <div class="row">
           <div class="col-6 col-md-3 mb-3">
-            <ul class="list-unstyled text-secondary-emphasis">
+            <ul class="list-unstyled text-secondary small">
               <li>Audio and Subtitles</li>
               <li>Media Center</li>
               <li>Privacy</li>
@@ -433,35 +537,33 @@
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-3">
-            <ul class="list-unstyled text-secondary-emphasis">
+            <ul class="list-unstyled text-secondary small">
+              <li>Audio Description</li>
+              <li>Investor Relations</li>
+              <li>Legal Notices</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <ul class="list-unstyled text-secondary small">
               <li>Help Center</li>
               <li>Jobs</li>
               <li>Cookie Preferences</li>
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-3">
-            <ul class="list-unstyled text-secondary-emphasis">
+            <ul class="list-unstyled text-secondary small">
               <li>Gift Cards</li>
               <li>Terms of Use</li>
               <li>Corporate Information</li>
             </ul>
           </div>
-          <div class="col-6 col-md-3 mb-3">
-            <ul class="list-unstyled text-secondary-emphasis">
-              <li>Account</li>
-              <li>Ways to Watch</li>
-              <li>Legal Notices</li>
-            </ul>
-          </div>
         </div>
         <button
-          class="btn btn-outline-secondary text-secondary-emphasis rounded rounded-0 btn-sm my-3"
+          class="btn btn-outline-secondary text-secondary rounded rounded-0 btn-sm my-3"
         >
           Service Code
         </button>
-        <p class="text-secondary-emphasis small mt-3">
-          &copy; 1997-2025 Netflix, Inc.
-        </p>
+        <p class="text-secondary small mt-3">&copy; 1997-2025 Netflix, Inc.</p>
       </div>
     </footer>
     <script
